@@ -1,47 +1,24 @@
-autocmd!
-set nocompatible
 syntax on
-set hidden
 colorscheme default
-set t_Co=256
-set background=dark
 set number
-set relativenumber
 set scrolloff=3
 
 " make backspace work
 set backspace=indent,eol,start
 " reload when changed on disk
-set autoread 
 set autoindent
 
 " Command Bar
 set laststatus=2
-set showtabline=2
-set winwidth=79
-set showcmd
-set switchbuf=useopen
-set ruler
 
-set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
-set t_ti= t_te=
-
-set showmatch
 set ignorecase
 set smartcase
 set hlsearch
-
-set encoding=utf8
-
-set nobackup
-set nowb
-set noswapfile
 
 set expandtab
 set shiftwidth=2
 set tabstop=2
 set ai
-set si
 set wrap
 
 set nojoinspaces

@@ -1,5 +1,32 @@
-" Show two lines in command Bar
+autocmd!
+
+set nocompatible
+set hidden
+set t_Co=256
+set background=dark
+set relativenumber
+set autoread 
+
 set cmdheight=1
+set showtabline=2
+set winwidth=79
+set showcmd
+set switchbuf=useopen
+set ruler
+
+set t_ti= t_te=
+
+set showmatch
+
+set encoding=utf8
+
+set si
+
+set nobackup
+set nowb
+set noswapfile
+
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
 " Vundle
 filetype off
