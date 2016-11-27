@@ -1,5 +1,3 @@
-autocmd!
-
 set nocompatible
 set hidden
 set t_Co=256
@@ -43,7 +41,6 @@ call vundle#end()
 filetype plugin indent on
 
 augroup vimrcEx
-    autocmd!
     " Jump to last cursor position when opening files
     autocmd BufReadPost *
         \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -93,8 +90,4 @@ hi Pmenu ctermfg=LightGrey ctermbg=Blue
 " Ignore files when searching
 set wildignore=*.o,*.obj,.git,node_modules/**,bower_components/**,**/node_modules/**,_build/**,deps/**
 
-" Elixir
-
-"" Run tests
-map <leader><space> :!mix test<CR>
 
