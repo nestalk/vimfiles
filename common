@@ -19,10 +19,11 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set ai
-set wrap
+set nowrap
 
 set nojoinspaces
 
 let mapleader=","
 
 map <leader>s :noh<CR>
+map <leader>. xph
